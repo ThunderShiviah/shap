@@ -14,7 +14,7 @@ except ImportError:
 
 # TODO: we should support text output explanations (from models that output text not numbers), this would require the force
 # the force plot and the coloring to update based on mouseovers (or clicks to make it fixed) of the output text
-def text(shap_values, num_starting_labels=0, grouping_threshold=0.01, separator='', xmin=None, xmax=None, cmax=None, display=True):
+def text(shap_values, num_starting_labels=0, grouping_threshold=0.01, separator='', xmin=None, xmax=None, cmax=None, display=False):
     """ Plots an explanation of a string of text using coloring and interactive labels.
 
     The output is interactive HTML and you can click on any token to toggle the display of the
